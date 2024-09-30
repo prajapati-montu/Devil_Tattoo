@@ -1,0 +1,632 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: #F5F4F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-bar-logo h1 {
+  font-family: serif;
+  text-decoration: line-through solid #000000;
+
+}
+
+.nav-bar-menu a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0 40px;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+
+.nav-bar-menu {
+  margin: 7px 0;
+}
+
+.nav-bar-menu a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.nav-bar-inq-no h4:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.hamburgur{
+  display: none;
+}
+
+.background-img {
+  background-image: url(../tattoo.img/image.jpg/music-tattoos.jpg);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  margin-top: 5%;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.background-img::after {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000075;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.background-img h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20% 0;
+}
+
+.tattoo-discription {
+  display: flex;
+  background-color: #E5E4E0;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.tattoo-img {
+  width: 30%;
+
+}
+
+.tattoo-img img {
+  padding-left: 80px;
+}
+
+.tattoo-discription-text {
+  width: 70%;
+}
+
+.tattoo-text {
+  padding: 20px 70px;
+  font-family: poppins-extralight, poppins, sans-serif;
+}
+
+.tattoo-text h1 {
+  letter-spacing: 2px;
+  font-size: 50px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.tattoo-text h1:hover {
+  text-decoration: underline 2px solid #000000;
+}
+
+.tattoo-text h2 {
+  font-size: 21px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #414141;
+  padding-bottom: 20px;
+}
+
+.tattoo-text p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.all-types-of-tattoo-img {
+  display: flex;
+  overflow: scroll;
+  background-color: #f5f4f0;
+gap: 15px;
+}
+.coverup-tattoo img{
+  height: 642px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.all-types-of-tattoo-img img {
+  /* height: 90%; */
+}
+
+.all-types-of-tattoo-img h1 {
+  text-align: center;
+  font-family: poppins-semibold, poppins, sans-serif;
+  color: #414141;
+}
+
+.all-types-of-tattoo-img h1:hover {
+  color: #000000;
+  text-decoration: underline 2px solid #000000;
+}
+
+.all-categ {
+  background-color: #F5F4F0;
+  text-align: center;
+  padding: 45px 0px;
+}
+
+.all-categ button {
+  color: #000000;
+  font-size: 40px;
+  font-family: poppins-semibold, poppins, sans-serif;
+  background-color: transparent;
+  border: 1px solid #414141;
+  padding: 6px 22px;
+  border-radius: 13px;
+  letter-spacing: 1px;
+}
+
+.all-categ button:hover {
+  background-color: #414141;
+  color: #ffffff;
+}
+
+.our-award-text {
+  font-family: poppins-extralight, poppins, sans-serif;
+  background-color: #E5E4E0;
+  padding: 35px 8%;
+}
+
+.our-award-text h1 {
+  color: #000000;
+  letter-spacing: 2px;
+  font-size: 55px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.our-award-text h2 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: #000000;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+.our-award-text p {
+  letter-spacing: 1px;
+  color: #000000;
+  font-size: 23px;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.our-award-text button {
+  color: #000000;
+  font-size: 30px;
+  font-family: poppins-semibold, poppins, sans-serif;
+  background-color: transparent;
+  border: 1px solid #414141;
+  padding: 6px 22px;
+  border-radius: 13px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.our-award-text button:hover {
+  background-color: #414141;
+  color: #ffffff;
+}
+
+.footer-top {
+  /* background-color: #F5F4F0; */
+  display: flex;
+  width: 100%;
+  /* justify-content: space-evenly; */
+  padding: 50px 0;
+
+  color: #ffffff;
+}
+
+.footer {
+  background-image: url(../tattoo.img/image.jpg/istockphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: bottom; */
+  width: 100%;
+  /* height: 100%; */
+  padding: 35px 0;
+  position: relative;
+z-index: 2;  
+}
+.footer::after {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000075;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.information {
+  width: 50%;
+}
+
+.address {
+  padding: 0 9%;
+  color: #ffffff;
+
+}
+
+.address h2 {
+  padding-bottom: 20px;
+}
+
+.address h3 {
+  padding-bottom: 10px;
+}
+
+.address p {
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+/* .address p:hover {
+  text-decoration: underline;
+
+} */
+
+.inq-all {
+  width: 25%;
+}
+
+.email h2 {
+  padding-bottom: 12px;
+}
+
+.email a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* .email a:hover {
+  text-decoration: underline;
+  color: #414141;
+} */
+
+.inq-no h2 {
+  padding: 12px 0;
+}
+
+
+.inq-all p:hover {
+  text-decoration: underline;
+  color: #414141;
+}
+
+.social-media-link {
+  display: flex;
+  width: 25%;
+  justify-content: space-evenly;
+}
+
+.social-media-link i {
+  font-size: 40px;
+}
+
+.footer-bottom {
+  /* background-color: #F5F4F0; */
+  padding-bottom: 40px;
+}
+
+.footer-bottom h1 {
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 0 55px;
+}
+
+/* .footer-bottom h1:hover{
+  text-decoration: underline; 
+} */
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+  .nav-bar {
+    display: initial;
+    padding: 0 0;
+  }
+
+  .nav-bar-logo h1 {
+    text-align: center;
+    /* font-size: 30px; */
+  }
+
+  /* .nav-bar-menu a {
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 400;
+  } */
+.main-nav-bar {
+display: block;
+position: absolute;
+z-index: 2;
+left: -200%;
+background-color: #ffffff;
+
+}
+.main-nav-bar a{
+  display: block;
+}
+.main-nav-bar.main{
+  left: 0;
+  top: 50px;
+ line-height: 1.6;
+}
+
+.hamburgur{
+  display: block;
+}
+  .nav-bar-inq-no {
+    display: none;
+  }
+
+  .background-img {
+    margin-top: 18%;
+  }
+
+  .background-img h1 {
+    font-size: 32px;
+  }
+
+  .tattoo-discription {
+    display: block;
+  }
+
+  .tattoo-img {
+    width: 100%;
+  }
+
+  .tattoo-img img {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .tattoo-discription-text {
+    width: 100%;
+  }
+
+  .tattoo-text {
+    padding: 20px 25px;
+  }
+
+  .all-types-of-tattoo-img {}
+
+  .all-categ {
+    padding: 25px 0px;
+  }
+
+  .our-award-text {}
+
+  .all-categ button {
+    padding: 6px 19px;
+    font-size: 20px;
+  }
+
+  .our-award-text h1 {
+    font-size: 24px;
+  }
+
+  .our-award-text p {
+    font-size: 15px;
+  }
+
+  .our-award-text h2 {
+    font-size: 25px;
+  }
+
+  .our-award-text button {
+    padding: 6px 19px;
+    font-size: 20px;
+  }
+
+  .footer {}
+
+  .footer-top {
+    display: block;
+    padding: 0 0;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .inq-all {
+    width: 100%;
+  }
+
+  .email {
+    padding: 0 35px;
+    margin-top: 30px;
+  }
+
+  .email h2 {
+    padding-bottom: 0;
+  }
+
+  .inq-no h2 {
+    padding: 0 0;
+  }
+
+  .inq-no {
+    margin-top: 15px;
+    padding: 0px 35px;
+  }
+
+  .social-media-link {
+    width: 100%;
+  }
+
+  .social-media-link i {
+    padding: 30px 0;
+  }
+
+  .footer-bottom h1 {
+    padding: 0 30px;
+    font-size: 15px;
+  }
+
+}
+@media only screen and (min-width: 768px) and (max-width:1199px) {
+  .nav-bar {
+    display: initial;
+    padding: 0 0;
+  }
+
+  .nav-bar-logo h1 {
+    text-align: center;
+    /* font-size: 30px; */
+  }
+.nav-bar-menu{
+  text-align: center;
+}
+  .nav-bar-menu a {
+    padding: 10px 15px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .nav-bar-inq-no {
+    display: none;
+  }
+
+  .background-img {
+    margin-top: 10%;
+  }
+
+  .background-img h1 {
+    font-size: 40px;
+  }
+
+  .tattoo-discription {
+    display: block;
+  }
+
+  .tattoo-img {
+    width: 100%;
+  }
+
+  .tattoo-img img {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .tattoo-discription-text {
+    width: 100%;
+  }
+
+  .tattoo-text {
+    padding: 20px 50px;
+  }
+
+
+
+  .all-categ {
+    padding: 25px 0px;
+  }
+
+  
+
+  .all-categ button {
+    padding: 6px 19px;
+    font-size: 20px;
+  }
+
+  .our-award-text h1 {
+    font-size: 24px;
+  }
+
+  .our-award-text p {
+    font-size: 15px;
+  }
+
+  .our-award-text h2 {
+    font-size: 25px;
+  }
+
+  .our-award-text button {
+    padding: 6px 19px;
+    font-size: 20px;
+  }
+  .footer-top {
+    display: flex;
+    padding: 0 0;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .inq-all {
+    width: 100%;
+  }
+
+  .email {
+    padding: 0 35px;
+    margin-top: 30px;
+  }
+
+  .email h2 {
+    padding-bottom: 0;
+  }
+
+  .inq-no h2 {
+    padding: 0 0;
+  }
+
+  .inq-no {
+    margin-top: 15px;
+    padding: 0px 35px;
+  }
+
+  .social-media-link {
+    width: 100%;
+  }
+
+  .social-media-link i {
+    padding: 30px 0;
+  }
+
+  .footer-bottom h1 {
+    padding: 30px 30px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 535px) and (max-width: 550px) {
+  .background-img {
+    margin-top: 13%;
+}
+.nav-bar-menu{
+  text-align: center;
+}
+.tattoo-text {
+  padding: 20px 40px;
+}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}
+@media only screen and (min-width: 1400px) and (max-width: 1400px) {
+
+}
+
+
